@@ -1,1 +1,2 @@
 # MusicSite
+Music recommendation system based on collaborative filtering algorithm. Collaborative filtering recommendation technology generally calculates the distance between users with nearest neighbor technology based on users’ historical hobby information and predicts the degree of preference of target users to specific goods according to the weighted evaluation value of the nearest neighbor user of target users for goods evaluation. The system makes a recommendation for target users according to this degree of preference
