@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><beans>
+	<bean id="userDao" class="org.bs.dao.impl.UserDaoImpl"/>
+	<bean id="userService" class="org.bs.service.impl.UserServiceImpl">
+		<property name="userDao" ref="userDao"/>
+	</bean>
+	<bean id="roleDao" class="org.bs.dao.impl.RoleDaoImpl"/>
+	<bean id="roleService" class="org.bs.service.impl.RoleServiceImpl">
+	<property name="roleDao" ref="roleDao"/>
+	</bean>
+	<bean id="memberDao" class="org.bs.dao.impl.MemberDaoImpl"/>
+	<bean id="memberService" class="org.bs.service.impl.MemberServiceImpl">
+		<property name="memberDao" ref="memberDao"/>
+	</bean>
+	<bean id="channelDao" class="org.bs.dao.impl.ChannelDaoImpl"/>
+	<bean id="channelService" class="org.bs.service.impl.ChannelServiceImpl">
+		<property name="channelDao" ref="channelDao"/>
+	</bean>
+	<bean id="musicDao" class="org.bs.dao.impl.MusicDaoImpl"/>
+	<bean id="musicService" class="org.bs.service.impl.MusicServiceImpl">
+		<property name="musicDao" ref="musicDao"/>
+	</bean>
+	<bean id="memberplaylistDao" class="org.bs.dao.impl.MemberplaylistDaoImpl"/>
+	<bean id="memberplaylistService" class="org.bs.service.impl.MemberplaylistServiceImpl">
+		<property name="memberplaylistDao" ref="memberplaylistDao"/>
+	</bean>
+	<bean id="memberlovesDao" class="org.bs.dao.impl.MemberlovesDaoImpl"/>
+	<bean id="memberlovesService" class="org.bs.service.impl.MemberlovesServiceImpl">
+		<property name="memberlovesDao" ref="memberlovesDao"/>
+	</bean>
+</beans>
